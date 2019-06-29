@@ -5,7 +5,9 @@ function loadData() {
 
     xhr.open('GET', 'data.txt', true);
     
-    console.log(`Ready state: ${xhr.readyState}`);
+    xhr.onprogress = function () {
+        console.log('READYSTATE', xhr.readyState);
+    }
 
     xhr.onload = function () {
         console.log(`Ready state: ${xhr.readyState}`);
