@@ -15,5 +15,9 @@ function loadData() {
             console.log(this.responseText);
         }
     }
+
+    xhr.onerror = function () {
+        console.error('Request error.');
+    }
     xhr.send();
 }
