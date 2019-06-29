@@ -7,7 +7,8 @@ function loadData() {
 
     xhr.onload = function () {
         if (this.status === 2000) {
-            
+            console.log(this.responseText);
         }
     }
+    xhr.send();
 }
