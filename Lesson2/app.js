@@ -7,20 +7,21 @@ function loadCustomer(e) {
     
     xhr.onload = function () {
         if (this.status === 200) {
-            
+
             // Turns the JSON into a JavaScript Object.
             const customer = JSON.parse(this.responseText);
 
             const output = `
                 <ul>
-                  <li>ID: ${user.id}</li>
-                  <li>Name: ${user.name}</li>
-                  <li>Company: ${user.company}</li>
-                  <li>Phone Number: ${user.phone}</li>
+                  <li>ID: ${customer.id}</li>
+                  <li>Name: ${customer.name}</li>
+                  <li>Company: ${customer.company}</li>
+                  <li>Phone Number: ${customer.phone}</li>
                 </ul>
             `;
+
+            document.getElementById('customer').innerHTML = output;
         }
     }
-
     xhr.send();
 }
