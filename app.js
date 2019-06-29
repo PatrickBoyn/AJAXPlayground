@@ -12,7 +12,7 @@ function loadData() {
     xhr.onload = function () {
         console.log(`Ready state: ${xhr.readyState}`);
         if (this.status === 200) {
-            console.log(this.responseText);
+            document.getElementById(`output`).innerHTML = `<h1>${this.responseText}</h1>`;
         }
     }
 
