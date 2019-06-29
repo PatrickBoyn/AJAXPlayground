@@ -1,7 +1,6 @@
 document.getElementById('btn-1').addEventListener('click', loadCustomer);
 document.getElementById('btn-2').addEventListener('click', loadCustomers);
 
-
 function loadCustomer(e) {
     const xhr = new XMLHttpRequest();
 
@@ -28,7 +27,7 @@ function loadCustomer(e) {
     xhr.send();
 }
 
-function loadCustmoers(e) {
+function loadCustomers(e) {
     const xhr = new XMLHttpRequest();
 
     xhr.open('GET', 'customers.json', true);
@@ -38,4 +37,5 @@ function loadCustmoers(e) {
             console.log(this.responseText);
         }
     }
+    xhr.send();
 }
