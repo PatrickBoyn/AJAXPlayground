@@ -34,7 +34,19 @@ function loadCustomers(e) {
 
     xhr.onload = function () {
         if (this.status === 200) {
-            console.log(this.responseText);
+            const customers = JSON.parse(this.responseText);
+
+            customers.forEach(function(customer) {
+                
+            });
+
+            const output = `
+            <ul>
+            
+            </ul>
+            `;
+
+            document.getElementById('customers').innerHTML = output;
         }
     }
     xhr.send();
