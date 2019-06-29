@@ -7,7 +7,11 @@ function loadCustomer(e) {
     
     xhr.onload = function () {
         if (this.status === 200) {
-            console.log(this.responseText);
+            
+            // Turns the JSON into a JavaScript Object.
+            const customer = JSON.parse(this.responseText);
+
+            
         }
     }
 
