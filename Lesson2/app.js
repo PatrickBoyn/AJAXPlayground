@@ -27,3 +27,13 @@ function loadCustomer(e) {
     }
     xhr.send();
 }
+
+function loadCustmoers(e) {
+    const xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'customers.json', true);
+
+    xhr.onload = function () {
+        
+    }
+}
