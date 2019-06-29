@@ -11,7 +11,14 @@ function loadCustomer(e) {
             // Turns the JSON into a JavaScript Object.
             const customer = JSON.parse(this.responseText);
 
-            
+            const output = `
+                <ul>
+                  <li>ID: ${user.id}</li>
+                  <li>Name: ${user.name}</li>
+                  <li>Company: ${user.company}</li>
+                  <li>Phone Number: ${user.phone}</li>
+                </ul>
+            `;
         }
     }
 
