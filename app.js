@@ -10,11 +10,10 @@ function loadData() {
     }
 
     xhr.onload = function () {
-        console.log(`Ready state: ${xhr.readyState}`);
-        if (this.status === 200) {
-            document.getElementById(`output`).innerHTML = `<h1>${this.responseText}</h1>`;
-        }
-    }
+       if (this.status === 200) {
+           document.getElementById('output').innerHTML = `<h1>${this.responseText}</h1>`;
+       }
+   }
 
     xhr.onerror = function () {
         console.error('Request error.');
