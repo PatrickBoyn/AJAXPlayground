@@ -36,6 +36,8 @@ function loadCustomers(e) {
         if (this.status === 200) {
             const customers = JSON.parse(this.responseText);
 
+            let output = '';
+
             customers.forEach(function(customer) {
                 
             });
