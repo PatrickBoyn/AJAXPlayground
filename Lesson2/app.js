@@ -1,4 +1,6 @@
 document.getElementById('btn-1').addEventListener('click', loadCustomer);
+document.getElementById('btn-2').addEventListener('click', loadCustomers);
+
 
 function loadCustomer(e) {
     const xhr = new XMLHttpRequest();
