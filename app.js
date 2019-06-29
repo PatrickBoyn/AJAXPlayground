@@ -6,7 +6,7 @@ function loadData() {
     xhr.open('GET', 'data.txt', true);
 
     xhr.onload = function () {
-        if (this.status === 2000) {
+        if (this.status === 200) {
             console.log(this.responseText);
         }
     }
