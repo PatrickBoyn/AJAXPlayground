@@ -10,7 +10,9 @@ function getJokes(e) {
 
     xhr.onload = function () {
         if (this.status === 200) {
-            
+            const response = this.responseText;
+
+            console.log(response);
         }
     }
 
