@@ -4,5 +4,6 @@ const posts = [
 ];
 
 function createPost(post, callBack) {
-    
+    setTimeout(function(){
+    }, 2000);
 }
