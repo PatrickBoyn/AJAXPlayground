@@ -6,7 +6,7 @@ const posts = [
 function createPost(post) {
     setTimeout(function () {
         posts.push(post);
-    })
+    }, 2000);
 }
 
 function getPosts() {
