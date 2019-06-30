@@ -13,7 +13,7 @@ function getPosts() {
     setTimeout(function () {
         let output = '';
 
-        post.forEach(post => {
+        posts.forEach(post => {
             output += `<li>${post.title}</li>`
         });
         document.body.innerHTML = output;
