@@ -9,10 +9,12 @@ function getJokes(e) {
     xhr.open(`http://api.icndb.com/jokes/random/${number}`, true);
 
     xhr.onload = function () {
-        
+        if (this.status === 200) {
+            
+        }
     }
 
     xhr.send();
-    
+
     e.preventDefault();
 }
