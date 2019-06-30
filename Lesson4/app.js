@@ -11,7 +11,8 @@ function createPost(post, callBack) {
 }
 
 function getPosts() {
-    
+    setTimeout(function(){
+    }, 1000);
 }
 
 createPost({title: 'Post three', body: 'post three'}, getPosts);
