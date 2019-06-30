@@ -16,7 +16,7 @@ function getPosts() {
         posts.forEach(post => {
             output += `<li>${post.title}</li>`
         });
-        document.body.innerHTML = output;
+        document.body.innerHTML = output;   
     }, 1000);
 }
 
