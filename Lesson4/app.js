@@ -4,6 +4,14 @@ const posts = [
 ];
 
 function createPost(post, callBack) {
-    setTimeout(function(){
+    setTimeout(function () {
+        posts.push(post);
+        callBack();
     }, 2000);
 }
+
+function getPosts() {
+    
+}
+
+createPost({title: 'Post three', body: 'post three'}, getPosts);
