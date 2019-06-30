@@ -14,7 +14,7 @@ function getPosts() {
         let output = '';
 
         post.forEach(post => {
-            
+            output += `<li>${post.title}</li>`
         });
     }, 1000)
 }
