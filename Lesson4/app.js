@@ -10,5 +10,7 @@ function createPost(post) {
 }
 
 function getPosts() {
-    
+    setTimeout(function () {
+        
+    }, 1000)
 }
