@@ -11,6 +11,10 @@ function createPost(post) {
 
 function getPosts() {
     setTimeout(function () {
-        
+        let output = '';
+
+        post.forEach(post => {
+            
+        });
     }, 1000)
 }
