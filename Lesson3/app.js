@@ -12,7 +12,13 @@ function getJokes(e) {
         if (this.status === 200) {
             const response = JSON.parse(this.responseText);
 
-            console.log(response);
+            let output = '';
+
+            if (response.type === 'success') {
+                
+            } else {
+                output += '<li><h3>Something went wrong.</h3></li>'
+            }
         }
     }
 
