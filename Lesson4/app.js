@@ -3,8 +3,10 @@ const posts = [
     {title: 'Post two', body: 'post two'}
 ];
 
-function createPost() {
-    
+function createPost(post) {
+    setTimeout(function () {
+        posts.push(post);
+    })
 }
 
 function getPosts() {
