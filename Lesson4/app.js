@@ -11,7 +11,11 @@ function createPost(post, callBack) {
 }
 
 function getPosts() {
-    setTimeout(function(){
+    setTimeout(function () {
+        let output = '';
+        posts.forEach(post => {
+            output += `<li>${post.title}</li>`
+        });
     }, 1000);
 }
 
