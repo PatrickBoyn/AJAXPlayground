@@ -3,3 +3,6 @@ const posts = [
     {title: 'Post two', body: 'post two'}
 ];
 
+function createPost(post, callBack) {
+    
+}
