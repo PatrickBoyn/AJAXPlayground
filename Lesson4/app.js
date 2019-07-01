@@ -7,6 +7,7 @@ function createPost(post) {
   return new Promise(function(resolve, reject) {
     setTimeout(function() {
       posts.push(post);
+      resolve();
     }, 2000);
   });
 }
@@ -21,4 +22,4 @@ function getPosts() {
   }, 1000);
 }
 
-createPost({ title: 'Post three', body: 'post three' }, getPosts);
+createPost({ title: 'Post three', body: 'post three' });
