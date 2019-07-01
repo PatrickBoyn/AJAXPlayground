@@ -3,7 +3,9 @@ const posts = [
   { title: 'Post two', body: 'post two' }
 ];
 
-function createPost(post, callBack) {}
+function createPost(post, callBack) {
+  return new Promise(function(resolve, reject) {});
+}
 
 function getPosts() {
   setTimeout(function() {
