@@ -22,4 +22,4 @@ function getPosts() {
   }, 1000);
 }
 
-createPost({ title: 'Post three', body: 'post three' });
+createPost({ title: 'Post three', body: 'post three' }).then(getPosts());
